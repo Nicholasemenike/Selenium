@@ -1,5 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
-we = webdriver.Chrome()
-
-print("just to check out")
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install))
