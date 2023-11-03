@@ -9,4 +9,6 @@ options.add_experimental_option("detach", True)
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-driver.get("https://www.neuralnine.com/")
+driver.get("https://nicholasemenike.github.io/Portfolio-website/")
+driver.title
+print(driver.title)
